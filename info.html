@@ -46,6 +46,13 @@
         font-size: 40px;
     }
 
+    h4
+    {
+        color: white;
+        font-family: 'Barlow', sans-serif;
+        font-size: 20px;
+    }
+
     #socialMedia
     {
         padding: 16px;
@@ -55,9 +62,8 @@
 
     button
     {
-        min-width: 10%;
-        height: auto;
-        margin:4px;
+        min-width: 20%;
+        
         padding: 16px;
         transition: 0.2s;
         background-color: white;
@@ -66,10 +72,11 @@
         border: none;
         text-decoration: none;
         cursor: pointer;
+        position: static       ;
+        bottom: 5px;
 
         
     }
-
 
  
 
@@ -82,6 +89,11 @@
 
     }
 
+    p{
+        color: white;
+        font-size: 3vh;
+    }
+
 
 
 </style>
@@ -91,39 +103,92 @@
 
     <div id="branding" class="w3-container w3-center">
         <div>
-            <h1>For Your World</h1>
+            <h1>Strike Info</h1>
         </div>
+
+        <div id="mainContent" class="w3-container w3-center">
+            <div class="w3-panel" style="background-color: #252636;">
+               
+                <h4> 
+                    The goal of this strike is to demonstrate the power a voice can have. <br>
+                    By asking people to inspire their online communities with the reasons they support the fight against climate change, we hope for thousands to pledge to commit to a sustainable future.
+                </h4>
+
+               
+            </div>  
+
+            <div class="w3-panel" style="background-color: white;">
+               
+                              
+                <h3 style="color: #252636;"> 
+                    THREE pledges cover FOOD waste FASHION waste and TIME wasing <br>
+                    THREE of the most pressing threats to the current climate crisis <br>                           
+                </h3>
+            </div>  
+
+
+            
        
         <div>
-            <img class="w3-image" src="images/FYW_Logo.png" style="width: 33%;">
-        </div>
-    </div>
-
-    <div id="mainContent" class="w3-container w3-center">
-        <div>
-            <h2>Join the Digital Climate Strike</h2>
-            <h3 id="countdown"></h3>
-
+            <a href="files/poster.png"><img class="w3-image" src="files/poster.png" style="width: 33%;"></a>
         </div>
 
-        <div class="w3-row">
+        <div class="w3-row w3-border" style="margin: 60px;">
 
-            <a href="info.html"><button style="font-size: 30px;">Info</button></a>    
+            <div class="w3-third w3-container">
+              <h2>FOOD</h2>  
+                <p>
+                The UN believe that nearly a third of the food we produce is wasted, this equates to roughly 740,584,337 Tons of food lost or wasted GLOBALLY THIS YEAR
+                </p>
 
-            <button id="schedule" onmouseover="changeSchedule(0)" onmouseout="changeSchedule(1)" style="font-size: 30px; cursor:default;">Schedule</button>  
+                
+            </div>
+    
+            <div class="w3-third w3-container">
+                <h2>FASHION</h2>  
 
-            <button id="press" onmouseover="changeSchedule(2)" onmouseout="changeSchedule(3)" style="font-size: 30px; cursor:default;">Press</button>  
+                <p>
+                    Every year, global emissions from textile production are equivalent to 1.2 billion tonnes of CO2, a figure that outweighs the carbon footprint of international flights and shipping combined
+                </p>
 
-            <a href="mailto:foryourworldcampaign@gmail.com"><button style="font-size: 30px;">Contact</button></a>
 
-        </div>
+            </div>
+    
+            <div class="w3-third w3-container">
+                <h2>TIME</h2>  
 
-        
-        
-    </div>
+                <p>
+                    If you compare Earth’s history to a calendar year than we (humans) have only existed for around 37 minutes - and we have used 33% of Earths entire natural resources in 0.2 seconds. Let’s not waste anymore time - ACT NOW.
+                </p>
+                                      
+            </div>
+
+            <a href="http://www.fao.org/3/i3347e/i3347e.pdf"><button class="w3-third">More on Food</button></a>
+
+
+            <a href="https://www.ellenmacarthurfoundation.org/assets/downloads/publications/A-New-Textiles-Economy_Full-Report.pdf"><button class="w3-third" >More on Fashion</button></a>
+
+            <a href="https://www.theworldcounts.com/challenges"><button class="w3-third" >More on Time</button></a>
+
 
     
-    <div id="socialMedia" class="w3-panel w3-center w3-display-bottommiddle" style="background-color:white; width: 100%;">     
+     
+      
+        </div>
+
+        <a href="index.html"><button style="margin: 40px; font-size: 3vh;">Return to Home</button></a>
+
+
+    </div>
+
+    <div>
+        
+
+
+   
+
+    
+    <div id="socialMedia" class="w3-panel w3-center" style="background-color:white; width: 100%;">     
         
         <a href="https://www.facebook.com/For-Your-World-107298321083785">
             <button> 
@@ -179,36 +244,6 @@
         document.getElementById("countdown").innerHTML = "THE CLIMATE STRIKE HAS BEGUN";
       }
     }, 1000);
-
-    function changeSchedule(index)
-    {
-        if(index == 0)
-        {
-            var x = document.getElementById("schedule");
-            x.innerHTML = "COMING SOON"
-            x.innerHTML.fontsize = "10px";
-            x.innerText
-        }
-
-        if(index == 1)
-        {
-            document.getElementById("schedule").innerHTML = "Schedule"
-        }
-
-        if(index == 2)
-        {
-            var x = document.getElementById("press");
-            x.innerHTML = "COMING SOON"
-            x.innerHTML.fontsize = "10px";
-            x.innerText
-        }
-
-        if(index == 3)
-        {
-            document.getElementById("press").innerHTML = "Press"
-        }
-    }
-
     </script>
 
 </html>
