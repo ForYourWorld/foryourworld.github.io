@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<title>For Your World</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&display=swap" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">  
+<link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
+
+<style>
+    body, html
+    {
+        width: 100%;
+        height: 100%;
+        font-family: 'Barlow', sans-serif;
+        background-color: #2d2f42;
+
+    }
+
+    h1
+    {
+        color: white;
+        font-family: 'Barlow', sans-serif;
+        font-size: 90px;
+    }
+
+    h2
+    {
+        color: white;
+        font-family: 'Barlow', sans-serif;
+        font-size: 4vw;
+    }
+
+    h3
+    {
+        color: white;
+        font-family: 'Barlow', sans-serif;
+        font-size: 3vw;
+    }
+
+    h4
+    {
+        color: white;
+        font-family: 'Barlow', sans-serif;
+        font-size: 20px;
+    }
+
+    #socialMedia
+    {
+        padding: 16px;
+        
+        
+    }
+
+    button
+    {
+        min-width: 20%;
+        
+        padding: 16px;
+        transition: 0.2s;
+        background-color: black;
+        color: white;
+        font: 1vh;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        position: static;
+        bottom: 5px;
+
+        
+    }
+
+ 
+
+    button:hover
+    {
+        background-color: black;
+        color: white   ;
+
+    }
+
+    p{
+        color: white;
+        font-size: 2vh;
+    }
+
+    .w3-col
+    {
+        margin-left: 50%;
+        padding: 32px;
+    }
+
+    #myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+</style>
+
+
+<body class="w3-mobile">
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+    <div id="branding" class="w3-container w3-center w3-mobile" style="width: 50%; height: 50%; padding: 1%;">
+
+        <div class="w3-col w3-white w3-center">
+            <a href="index.html"><button style="margin: 40px; font-size: 3vh; ">Return to Home</button></a>
+
+        </div>
+
+        <div class="w3-row w3-center"">
+            <div class="w3-col w3-center">
+                <h2>Schedule</h2>      
+            </div>
+
+            <div class="w3-col w3-center" style="background-color:#BCEDF6;" >
+                <h3>9AM<br>Yoga with Honeyyflow</h3>      
+                <p>
+                    'Ease your climate anxiety with a restful, restorative flow'
+                </p>
+
+                <a style="font-size: 2vw; color:white;" href="www.instagram.com/honeyyflow">Go to Instagram</a>
+
+                <img src="images/schedule/1.png"style="width:100%;">
+            </div>
+
+            <div class="w3-col w3-center" style="background-color:#006341;">
+                <h3>10AM<br>Strike Coffe Morning with Clifton Down Starbucks - IGTV @srbxctd</h3>      
+                <p>
+                    'Start the day off with a cup of coffee from its birthplace. Listen to how coffee is effected by th climate crisis and its place within Starbucks'
+                </p>
+                <img src="images/schedule/2.png"style="width:100%;">
+
+                <a style="font-size: 2vw; color:white;" href="https://www.instagram.com/srbxctd/">Go to Instagram</a>
+
+
+            </div>
+
+            <div class="w3-col w3-center" style="background-color:#E6C229;" >
+                <h3 >11AM<br>Reassessing sustainability goals with the live events industry with Briony Whitaker </h3>      
+                <p>
+                    'How can we use the break provided with COVID-19 within the live events industry to refocus and reassess our sustainability goals. This talk will have a focus on festivals so check in and pitch your tent!'
+                </p>
+
+                <img src="images/schedule/3.png"style="width:100%;">
+
+
+
+            </div>
+
+            <div class="w3-col w3-center" style="background-color:#1E1E24;">
+                <h3 >12pm<br>In conversation with Life Before Plastik</h3>      
+                <p>
+                    'Join Life Before Plastik to hear why they got involved in the fight against climate change and what we should be most urgently tackling.'
+                </p>
+                
+
+                <img src="images/schedule/4.png"style="width:100%;">
+
+                <a style="font-size: 2vw; color:white;" href="https://www.lifebeforeplastik.com/">Go to Website<br></a>
+                <a style="font-size: 2vw; color:white;" href="https://www.facebook.com/lifebeforeplastik">Go to Facebook<br></a>
+                <a style="font-size: 2vw; color:white;" href="https://www.instagram.com/lifebeforeplastik/">Go to Instagram<br></a>
+
+
+
+            </div>
+
+            <div class="w3-col w3-center" style="background-color:#E83151;" >
+                <h3 >1PM<br>Climate Education with Climate Wonderer</h3>      
+                <p>
+                    'Join Keith Sigfred as he talks about Transformative Climate Education - how to make learning more engaging, environmental literacy and creating action.'
+                </p>
+
+                <img src="images/schedule/5.jpg" style="width:100%; ">
+
+                <a style="font-size: 2vw; color:white;" href="www.instagram.com/climate_wonderer">Go to Instagram</a>
+
+
+            </div>
+
+            <div class="w3-col w3-center" style="background-color:#E6C229;"  >
+                <h3 >4PM<br>In conversation with Youth.ify</h3>      
+                <p>
+                    'Youth.ify is a platform for youth all over the world to connect, collaborate and support one another. Let's see what they have to say on networking in the climate crisis.'
+                </p>
+
+                <img src="images/schedule/6.png" style="width:100%;">
+
+                <a style="font-size: 2vw; color:white;" href="https://www.instagram.com/youth.ify/">Go to Instagram</a>
+
+
+            </div>
+
+            <div class="w3-col w3-center" style="background-color:black;"  >
+                <h3 >3PM / 3:30PM / 7PM<br>What on EARTH?!</h3>      
+                <p>
+                    'Join the creative team for a conversation about their intentions and their motivations for this digital theatre piece (3PM and 7PM via ZOOM).<br>Keep an eye out for the premier at 3:30pm to see what they've been up to. This is a FREE event, but any donations to the Grove are wonderful!'
+                </p>
+
+                <img src="images/schedule/poster.png" style="width:100%;">
+
+                <a style="font-size: 2vw; color:white;" href="https://treesforlife.org.uk/groves/228929/">Go to Grove<br></a>
+
+                <a style="font-size: 2vw; color:white;" href="https://us04web.zoom.us/j/4249738700?pwd=QVhFaW81NjJaMHhhWGo1bXZ2MmNHZz09">Join Zoom Call</a>
+
+                <p>
+                    Meeting ID: 424 973 8700<br>
+                    Passcode: K6n129
+                </p>
+
+
+
+            </div>
+
+        
+        </div>
+
+
+         
+        <div id="socialMedia" class="w3-row " style="background-color:white; width: 100%; margin: 50px; margin-left: 50%;">     
+        
+            <a href="https://www.facebook.com/For-Your-World-107298321083785">
+                <button> 
+                    <i class="fa fa-2x  fa-facebook" ></i>
+                </button>
+            </a>
+    
+            <a href="https://www.youtube.com/channel/UCTbcHFwejDcdE1ynddhMJgA">
+                <button>        
+                    <i class="fa fa-2x fa-youtube" ></i>            
+                </button>
+            </a>
+    
+            <a href="https://www.instagram.com/foryourworld_">
+                <button>        
+                    <i class="fa fa-2x fa-instagram" ></i>            
+                </button>
+            </a>
+    
+        </div>
+
+      
+         
+
+    </div>
+
+   
+
+
+
+
+</body>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Aug 29, 2020 09:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "THE CLIMATE STRIKE HAS BEGUN";
+      }
+    }, 1000);
+
+    //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+    </script>
+
+    
+
+</html>
