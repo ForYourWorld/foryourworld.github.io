@@ -47,23 +47,16 @@
         font-size: 40px;
     }
 
-    #socialMedia
-    {
-        padding: 16px;
-        
-        
-    }
+
 
     button
     {
-        min-width: 10%;
         height: auto;
         margin:4px;
         padding: 16px;
         transition: 0.2s;
         background-color: white;
         color: #2d2f42;
-        font: 1vh;
         border: none;
         text-decoration: none;
         cursor: pointer;
@@ -71,7 +64,29 @@
         
     }
 
+    @media only screen and (max-width: 600px) 
+    {
+     button 
+     {
+        width: 80%;
+        font-size: 4vw;
+        
 
+
+     }
+    }
+
+    @media only screen and (min-width: 600px) 
+    {
+     button 
+     {
+        width: 40%;
+        max-width: 60%;
+        font-size: 1.5vw;
+
+
+     }
+    }
  
 
     button:hover
@@ -82,6 +97,8 @@
         text-shadow: 2px 2px 30px #2d2f42;
 
     }
+    
+    
 
 
 
@@ -96,26 +113,28 @@
         </div>
        
         <div>
-            <img class="w3-image" src="images/FYW_Logo.png" style="width: 33%; min-width: 300px;">
+            <img class="w3-image" src="images/FYW_Logo.png" style="max-width: 20%; padding: 2%;" ;>
         </div>
     </div>
 
     <div id="mainContent" class="w3-container w3-center">
-        <div>
-            <h2>Join the Digital Climate Strike</h2>
-            <h3 id="countdown"></h3>
-
-        </div>
+        
 
         <div class="w3-row">
+            <div class="w3-col">
+                <div><a href="http://treesforlife.org.uk/groves/228929/"><button>Join our Grove: Plant a Tree!</button></a> </div>   
 
-            <a href="info.html"><button style="font-size: 30px;">Info</button></a>    
+                <div><a href="https://www.youtube.com/watch?v=o5-_G5csfcQ&t=0"><button>What on Earth?!</button></a>  </div>  
 
-            <a href="schedule.html"><button style="font-size: 30px;">Schedule</button></a>    
+                <div><a href="https://docs.google.com/forms/d/e/1FAIpQLSddQmeIai5auhJxjaSpXVe3pWvkRl689no3ZcHoOn893VZJJw/viewform"><button>Grab me for a Climate Reality Presentation</button></a></div>
 
-            <a href="press.html"><button style="font-size: 30px;">Press</button></a>    
+               <div><a href="https://www.facebook.com/foryourworldcampaign/"><button>Facebook</button></a></div>
 
-            <a href="mailto:foryourworldcampaign@gmail.com"><button style="font-size: 30px;">Contact</button></a>
+               <div><a href="https://www.instagram.com/foryourworld_/"><button>Instagram</button></a></div>
+
+               <div><a href="https://twitter.com/foryourworld_"><button>Twitter</button></a></div>
+
+            </div>
 
         </div>
 
@@ -124,92 +143,11 @@
     </div>
 
     
-    <div id="socialMedia" class="w3-panel w3-center" style="background-color:white; width: 100%;">     
-        
-        <a href="https://www.facebook.com/For-Your-World-107298321083785">
-            <button> 
-                <i class="fa fa-2x  fa-facebook" ></i>
-            </button>
-        </a>
-
-        <a href="https://www.youtube.com/channel/UCTbcHFwejDcdE1ynddhMJgA">
-            <button>        
-                <i class="fa fa-2x fa-youtube" ></i>            
-            </button>
-        </a>
-
-        <a href="https://www.instagram.com/foryourworld_">
-            <button>        
-                <i class="fa fa-2x fa-instagram" ></i>            
-            </button>
-        </a>
-
-    </div>
 
 
 
 
 </body>
 
-<script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Aug 29, 2020 09:00:00").getTime();
-    
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-    
-      // Get today's date and time
-      var now = new Date().getTime();
-    
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-    
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-      // Display the result in the element with id="demo"
-      document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-    
-      // If the count down is finished, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("countdown").innerHTML = "THE CLIMATE STRIKE HAS BEGUN";
-      }
-    }, 1000);
-
-    function changeSchedule(index)
-    {
-        if(index == 0)
-        {
-            var x = document.getElementById("schedule");
-            x.innerHTML = "COMING SOON"
-            x.innerHTML.fontsize = "10px";
-            x.innerText
-        }
-
-        if(index == 1)
-        {
-            document.getElementById("schedule").innerHTML = "Schedule"
-        }
-
-        if(index == 2)
-        {
-            var x = document.getElementById("press");
-            x.innerHTML = "COMING SOON"
-            x.innerHTML.fontsize = "10px";
-            x.innerText
-        }
-
-        if(index == 3)
-        {
-            document.getElementById("press").innerHTML = "Press"
-        }
-    }
-
-    </script>
 
 </html>
