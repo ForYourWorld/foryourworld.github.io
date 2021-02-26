@@ -11,41 +11,45 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
 
 
 <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">  
 <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
 
 <style>
+    
+@keyframes fadeIn 
+{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
     body, html
     {
         width: 100%;
         height: 100%;
-        font-family: 'Barlow', sans-serif;
-        background-color: #2d2f42;
+        background-color:rgba(0, 0, 0, 0.8);
+        font-family: 'Montserrat', sans-serif;
+        overflow: hidden;
+        
+
+        
+
 
     }
 
     h1
     {
         color: white;
-        font-family: 'Barlow', sans-serif;
         font-size: 5.5vw;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0;
+
     }
 
-    h2
-    {
-        color: white;
-        font-family: 'Barlow', sans-serif;
-        font-size: 4vw;
-    }
 
-    h3
-    {
-        color: white;
-        font-family: 'Barlow', sans-serif;
-        font-size: 40px;
-    }
 
 
 
@@ -83,6 +87,7 @@
         width: 40%;
         max-width: 60%;
         font-size: 1.5vw;
+        
 
 
      }
@@ -92,11 +97,34 @@
     button:hover
     {
         animation: fadeColour;
-        background-color: #2fe9fe;
+        background-color: #2ffe6d;
         color: white;
-        text-shadow: 2px 2px 30px #2d2f42;
+        text-shadow: 2px 2px 40px #2d2f42;
 
     }
+
+    #myVideo 
+        {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  animation-name: fadeIn;  
+        animation-duration: 1s;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+
     
     
 
@@ -107,13 +135,17 @@
 
 <body>
 
+    <video autoplay muted loop id="myVideo">
+        <source src="naturevideo.mp4" type="video/mp4">
+      </video>
+      
     <div id="branding" class="w3-container w3-center">
         <div>
             <h1>For Your World</h1>
         </div>
        
         <div>
-            <img class="w3-image" src="images/FYW_Logo.png" style="max-width: 20%; padding: 2%;" ;>
+            <img class="w3-image" src="images/FYW_Logo_Round.png" style="max-width: 24%; padding: 1%;" ;>
         </div>
     </div>
 
